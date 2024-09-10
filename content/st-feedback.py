@@ -4,7 +4,11 @@ st.subheader("st.feedback")
 
 st.warning("⭐ Introducing st.feedback to collect ratings and sentiment from your users!")
 
-st.write("Display a feedback widget with stars, and show the selected sentiment:")
+st.write("""
+**Display stars**
+
+Display a feedback widget with stars, and show the selected sentiment:
+""")
 with st.echo():
   sentiment_mapping = ["one", "two", "three", "four", "five"]
   selected = st.feedback("stars")
