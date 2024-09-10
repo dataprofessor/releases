@@ -13,3 +13,11 @@ with st.echo():
       st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
 
 st.divider()
+
+st.subheader("Display thumbs up/down")
+st.write("Display a feedback widget with stars, and show the selected sentiment:")
+with st.echo():
+  sentiment_mapping = [":material/thumb_down:", ":material/thumb_up:"]
+  selected = st.feedback("thumbs")
+  if selected is not None:
+      st.markdown(f"You selected: {sentiment_mapping[selected]}")
