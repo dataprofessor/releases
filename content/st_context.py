@@ -7,5 +7,5 @@ st.write("🍪 Introducing st.context to read headers and cookies!")
 with st.echo():
   st.context.headers
 
-with st.cookies():
+with st.echo():
   st.context.headers
