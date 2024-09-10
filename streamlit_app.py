@@ -4,7 +4,6 @@ st.set_page_config(page_title="Streamlit Releases", page_icon="🗺️")
 
 st.title('🗺️ Streamlit Releases')
 
-
 pages = {
     "Main" : [
         st.Page("home.py", title="Home", icon=":material/home:"),
