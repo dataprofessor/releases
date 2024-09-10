@@ -2,4 +2,5 @@ import streamlit as st
 
 st.subheader("st.context")
 
-st.context.headers
+with st.echo():
+  st.context.headers
