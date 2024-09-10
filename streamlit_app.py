@@ -10,8 +10,8 @@ pages = {
         st.Page("about.py", title="About", icon=":material/local_library:")
     ],
     "Version 1.37.0" : [
-        st.Page("content/st_context.py", title="st.context", icon=":material/nutrition:"),
-        st.Page("content/page2.py", title="Page 2", icon=":material/handyman:"),
+        st.Page("content/st-context.py", title="st.context", icon=":material/nutrition:"),
+        st.Page("content/st-feedback.py", title="Page 2", icon=":material/handyman:"),
     ]
 }
 
