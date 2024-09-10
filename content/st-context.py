@@ -4,20 +4,14 @@ st.subheader("st.context")
 
 st.warning("🍪 Introducing `st.context` to read headers and cookies!")
 
-st.write("""
-  **context.headers**
-  
-  Show a dictionary of headers:
-  """)
+st.subheader("context.headers")
+st.write("Show a dictionary of headers:")
 with st.echo():
   st.context.headers
 
 st.divider()
 
-st.write("""
-  **context.cookies**
-  
-  Show a dictionary of cookies:
-  """)
+st.subheader("context.cookies")
+st.write("Show a dictionary of cookies:")
 with st.echo():
   st.context.cookies
