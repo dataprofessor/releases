@@ -21,3 +21,5 @@ with st.echo():
   selected = st.feedback("thumbs")
   if selected is not None:
       st.markdown(f"You selected: {sentiment_mapping[selected]}")
+
+st.page_link("https://docs.streamlit.io/develop/api-reference/widgets/st.feedback", label="st.feedback Docs", icon="🌎")
