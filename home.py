@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.write('Home')
+st.info('This is an interactive app for exploring recently released Streamlit features.')
