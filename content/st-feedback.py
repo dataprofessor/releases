@@ -3,6 +3,7 @@ import streamlit as st
 st.subheader("st.feedback")
 
 st.warning("⭐ Introducing st.feedback to collect ratings and sentiment from your users!")
+st.page_link("https://docs.streamlit.io/", label="Docs", icon="🌎")
 
 st.subheader("Display stars")
 st.write("Display a feedback widget with stars, and show the selected sentiment:")
@@ -22,4 +23,3 @@ with st.echo():
   if selected is not None:
       st.markdown(f"You selected: {sentiment_mapping[selected]}")
 
-st.page_link("https://docs.streamlit.io/", label="Docs", icon="🌎")
