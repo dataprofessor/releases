@@ -9,3 +9,4 @@ st.info("""
 
 st.page_link("https://docs.streamlit.io/develop/quick-reference/release-notes", label="Release notes", icon=":material/checklist:")
 st.page_link("https://docs.streamlit.io/develop/quick-reference/prerelease", label="Pre-release features", icon=":material/preview:")
+st.page_link("https://roadmap.streamlit.app/", label="Streamlit roadmap", icon=":material/map:")
