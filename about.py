@@ -7,11 +7,11 @@ st.info("""
   For more information, check out the following links:
         """)
 
-st.write("### Streamlit Open Source")
+st.write("#### Streamlit Open Source")
 st.page_link("https://docs.streamlit.io/develop/quick-reference/release-notes", label="Release notes", icon=":material/checklist:")
 st.page_link("https://docs.streamlit.io/develop/quick-reference/prerelease", label="Pre-release features", icon=":material/preview:")
 st.page_link("https://roadmap.streamlit.app/", label="Streamlit roadmap", icon=":material/map:")
 
-st.write("### Streamlit in Snowflake")
+st.write("#### Streamlit in Snowflake")
 st.page_link("https://docs.snowflake.com/en/release-notes/streamlit-in-snowflake", label="Release notes", icon=":material/checklist:")
 st.page_link("https://docs.snowflake.com/en/developer-guide/streamlit/limitations#label-streamlit-unsupported-features", label="Limitations and unsupported features", icon=":material/checklist:")
