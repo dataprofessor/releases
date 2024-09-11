@@ -14,4 +14,4 @@ st.page_link("https://roadmap.streamlit.app/", label="Streamlit roadmap", icon="
 
 st.write("#### Streamlit in Snowflake")
 st.page_link("https://docs.snowflake.com/en/release-notes/streamlit-in-snowflake", label="Release notes", icon=":material/checklist:")
-st.page_link("https://docs.snowflake.com/en/developer-guide/streamlit/limitations#label-streamlit-unsupported-features", label="Limitations and unsupported features", icon=":material/checklist:")
+st.page_link("https://docs.snowflake.com/en/developer-guide/streamlit/limitations#label-streamlit-unsupported-features", label="Limitations and unsupported features", icon=":material/folder_limited:")
