@@ -3,6 +3,7 @@ import streamlit as st
 st.subheader("st.context")
 
 st.warning("🍪 Introducing `st.context` to read headers and cookies!")
+st.page_link("https://docs.streamlit.io/develop/api-reference/utilities/st.context", label="Read Docs", icon=":material/menu_book:")
 
 st.subheader("context.headers")
 st.write("Show a dictionary of headers:")
