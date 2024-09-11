@@ -11,7 +11,7 @@ pages = {
     ],
     "Version 1.37.0" : [
         st.Page("content/st-context.py", title="st.context", icon=":material/nutrition:"),
-        st.Page("content/st-feedback.py", title="st.feedback", icon=":material/handyman:"),
+        st.Page("content/st-feedback.py", title="st.feedback", icon=":material/chat:"),
         st.Page("content/st-fragment.py", title="st.fragment", icon=":material/donut_small:"),
     ],
 }
