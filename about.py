@@ -13,3 +13,4 @@ st.page_link("https://docs.streamlit.io/develop/quick-reference/prerelease", lab
 st.page_link("https://roadmap.streamlit.app/", label="Streamlit roadmap", icon=":material/map:")
 
 st.write("### Streamlit in Snowflake")
+st.page_link("https://docs.snowflake.com/en/release-notes/streamlit-in-snowflake", label="Release notes", icon=":material/checklist:")
