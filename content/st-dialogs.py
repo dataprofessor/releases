@@ -1,31 +1,33 @@
 import streamlit as st
 
-st.subheader("st.fragment")
+st.subheader("st.dialog")
 
-st.warning("👟 Announcing the general availability of st.fragment, a decorator that lets you rerun functions independently of the whole page.")
-st.page_link("https://docs.streamlit.io/develop/api-reference/execution-flow/st.fragment", label="Read Docs", icon=":material/menu_book:")
+st.warning("🍿 Announcing the general availability of st.dialog, a decorator that lets you create modal dialogs")
+st.page_link("https://docs.streamlit.io/develop/api-reference/execution-flow/st.dialog", label="Read Docs", icon=":material/menu_book:")
 
 st.subheader("Example")
 st.write("""
-  This example demonstrates how elements both inside and outside of a fragement update with each app or fragment rerun. 
-  In this app, clicking "Rerun full app" will increment both counters and update all values displayed in the app. 
-  In contrast, clicking "Rerun fragment" will only increment the counter within the fragment. 
-  In this case, the `st.write` command inside the fragment will update the app's frontend, 
-  but the two `st.write` commands outside the fragment will not update the frontend.
+  The following example demonstrates the basic usage of `@st.dialog`. 
+  In this app, clicking "A" or "B" will open a modal dialog and prompt you to enter a reason for your vote. 
+  In the modal dialog, click "Submit" to record your vote into Session State and rerun the app. 
+  This will close the modal dialog since the dialog function is not called during the full-script rerun.
 """)
-with st.echo():
-  if "app_runs" not in st.session_state:
-    st.session_state.app_runs = 0
-    st.session_state.fragment_runs = 0
 
-  @st.fragment
-  def my_fragment():
-      st.session_state.fragment_runs += 1
-      st.button("Rerun fragment")
-      st.write(f"Fragment says it ran {st.session_state.fragment_runs} times.")
+with st.echo():
+  @st.dialog("Cast your vote")
+  def vote(item):
+      st.write(f"Why is {item} your favorite?")
+      reason = st.text_input("Because...")
+      if st.button("Submit"):
+          st.session_state.vote = {"item": item, "reason": reason}
+          st.rerun()
   
-  st.session_state.app_runs += 1
-  my_fragment()
-  st.button("Rerun full app")
-  st.write(f"Full app says it ran {st.session_state.app_runs} times.")
-  st.write(f"Full app sees that fragment ran {st.session_state.fragment_runs} times.")
+  if "vote" not in st.session_state:
+      st.write("Vote for your favorite")
+      if st.button("A"):
+          vote("A")
+      if st.button("B"):
+          vote("B")
+  else:
+      f"You voted for {st.session_state.vote['item']} because {st.session_state.vote['reason']}"
+  
