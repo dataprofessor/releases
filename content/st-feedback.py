@@ -3,6 +3,7 @@ import streamlit as st
 st.subheader("st.feedback")
 
 st.warning("⭐ Introducing st.feedback to collect ratings and sentiment from your users!")
+st.page_link("http://www.google.com", label="Google", icon="🌎")
 
 st.subheader("Display stars")
 st.write("Display a feedback widget with stars, and show the selected sentiment:")
