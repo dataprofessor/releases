@@ -6,7 +6,7 @@ st.title('🗺️ Streamlit Releases')
 
 pages = {
     "Main" : [
-        st.Page("home.py", title="Home", icon=":material/home:"),
+        st.Page("home.py", title="Home", icon=":material/help_center:"),
         st.Page("about.py", title="About", icon=":material/local_library:")
     ],
     "Version 1.37.0" : [
